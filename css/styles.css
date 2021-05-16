@@ -57,7 +57,6 @@ ul {
   align-items: center;
   justify-content: space-between;
 }
-
 /* Логотип */
 .logo-link {
   font-family: 'Raleway', sans-serif;
@@ -71,7 +70,6 @@ ul {
 .logo-link > span {
   color: var(--hover-color);
 }
-
 .navigation {
   display: flex;
   align-items: center;
@@ -125,6 +123,7 @@ margin-right: 50px;
 }
 /*Кнопка*/
 .modal-btn {
+  min-width: 200px;
   border-radius: 4px;
   padding: 10px 32px;
   letter-spacing: 0.06em;
@@ -257,7 +256,6 @@ margin-top: -30px;
   background-color: #2f303a;
   flex-direction: column;
 }
-
 /*Футер логотип*/
 footer .logo-link-two {
   font-family: 'Raleway', sans-serif;
@@ -313,50 +311,43 @@ footer .logo-link-two {
   color: var(--hover-color);
   color: rgba(255 255 255 0.6);
 }
-
 /* Портфолио */
-/* Навигация */
-.portfolio:nth-child(1n) {
-
-}
-.portfolio {
-  background-color: ;
-}
 .main {
   display: flex;
-  padding-left: 280px;
   padding-bottom: 50px;
-  background-color: #F5F4FA;
+  /* min-width: 611px; */
 }
-.portfolio-item:not(:last-child) {
-  margin-right: 8px;
-  
-  color: var(--hover-color);
+.portfolio-item {
+  background-color: #E5E4EA;
 }
+
 .techno {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  padding: 0px;
+  outline: 1px solid red;
 }
 .techno-item {
-  flex-basis: calc((100% - 90px) / 9);
   margin-left: 30px;
   margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
   background-color: #FFFFFF;
+  outline: 1px solid blue;
 }
+
 .card-container {
-  padding-top: 20px;
+  padding:0px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
-}
-.techno-item:not(:nth-last-child(-n +3)) {
-  margin-bottom: 30px;
+  outline: 1px solid purple;
 }
 /* Уникальный Контент */
-.portfolio
-.btn-filter {
-  min-width: 86px;
+.portfolio .btn-filter {
+  min-width: 128px;
+  padding: 6px 22px;
+  border-radius: 4px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -365,14 +356,15 @@ footer .logo-link-two {
   min-width: 73px;
   text-align: center;
   cursor: pointer;
-  border: none;
-
 }
-.portfolio .btn-filter:hover {
+.portfolio 
+.btn-filter:hover,
+.btn-filter:active{
   color: var(--white-color);
   background-color: var(--hover-color);
 }
-.portfolio .portfolio-title {
+.portfolio 
+.portfolio-title {
   min-width: 322px;
   margin-bottom: 4px;
   font-style: normal;
@@ -382,10 +374,11 @@ footer .logo-link-two {
   letter-spacing: 0.06em;
   color: var(--main-color);
 }
-.portfolio .portfolio-content {
+.portfolio 
+.portfolio-content {
+  padding-bottom: 20px;
   min-width: 322px;
   list-style: normal;
-  text-decoration: none;
   color: var(--second-color);
   font-weight: 400;
   font-size: 16px;

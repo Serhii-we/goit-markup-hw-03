@@ -96,6 +96,15 @@ padding: 32px 0px 32px 0px;
 .current {
   color: var(--hover-color)
 }
+.menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+
+}
 .menu-link:hover,
 .menu-link:focus,
 .contacts:hover,
@@ -165,7 +174,8 @@ padding: 32px 0px 32px 0px;
   color: var(--main-color);
 }
 .features-content {
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -257,7 +267,7 @@ margin-top: -30px;
   flex-direction: column;
 }
 /*Футер логотип*/
-footer .logo-link-two {
+.footer .logo-link-two {
   font-family: 'Raleway', sans-serif;
   display: inline-block;
   width: 145px;
@@ -278,6 +288,11 @@ footer .logo-link-two {
 } 
 /* Адресс */
 .map-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--white-color);
 }
 .map-link, .contacts-two {
@@ -286,18 +301,10 @@ footer .logo-link-two {
 }
 .address:hover {
   color: var(--white-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
 }
-.address {
-  font-style: normal;
-}
-.footer,
-.address,
 .contacts-two,
 .tel-link {
+  font-style: normal;
   color: var(--second-color);
   font-weight: 400;
   font-size: 14px;
@@ -366,7 +373,6 @@ footer .logo-link-two {
   0px 1px 2px rgba(0, 0, 0, 0.8), 
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .btn-filter:hover,
 .btn-filter:active{
   color: var(--white-color);
@@ -374,7 +380,6 @@ footer .logo-link-two {
 }
 .portfolio
 .portfolio-title {
-
   margin-bottom: 4px;
   font-style: normal;
   font-weight: 700;

@@ -3,6 +3,9 @@
   --second-color: #757575;
   --hover-color: #2196f3;
   --white-color:#ffffff;
+  --new-color:#F5F4FA;
+  --border:#EEEEEE;
+  --two-color:#2f303a;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -15,13 +18,13 @@ h3,
 h4,
 h5,
 p {
-margin-top: 0;
-margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 ul,ol {
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 img {
   display: block;
@@ -40,7 +43,7 @@ ul {
 /*Container*/
 .header {
   padding: 32px 0px 32px 0px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--border);
 }
 .container {
   width: 1200px;
@@ -51,10 +54,8 @@ ul {
   margin-right: auto;
 }
 .header-container{
-  display: flex;
-  text-decoration: row;
+  display: flex;;
   align-items: center;
-  justify-content: space-between;
 }
 /* Логотип */
 .logo-link {
@@ -73,10 +74,10 @@ ul {
   display: flex;
   align-items: center;
 }
-.navigation
-.menu-link
-.contacts
-.tel-link {
+  .navigation
+  .menu-link
+  .contacts
+  .tel-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,7 +86,12 @@ ul {
 .menu {
   display: flex;
   align-items: center;
-  margin: 0px 0px 0px auto;
+  padding: 0px;
+}
+.menu-two{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
   padding: 0px;
 }
 .menu-item:not(:last-child ){
@@ -105,12 +111,21 @@ ul {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
-.menu-link:hover,
-.menu-link:focus,
-.contacts:hover,
-.contacts:focus,
-.tel-link:hover,
-.tel-link:focus{
+.contacts,
+.tel-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+  .menu-link:hover,
+  .menu-link:focus,
+  .contacts:hover,
+  .contacts:focus,
+  .tel-link:hover,
+  .tel-link:focus{
   color: var(--hover-color);
 }
 /* Герой */
@@ -118,7 +133,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: #2f303a;
+  background-color: var(--two-color);
 }
 .hero-title {
   width: 696px;
@@ -153,7 +168,6 @@ ul {
 }
 .features-list {
   display: flex; 
-  text-decoration: row;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -193,10 +207,10 @@ ul {
   text-align: center;
 }
 .doing-list {
-display: flex;
-flex-wrap: wrap;  
-margin-left: -30px;
-margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;  
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .doing-item {
   margin-left: 30px;
@@ -205,7 +219,7 @@ margin-top: -30px;
 }
 /* Наша команда */
 .our-team:nth-child(2n) {
-  background-color: #F5F4FA;
+  background-color: var(--new-color); 
   margin-bottom: 0px;
 }
 .team-list {
@@ -226,7 +240,6 @@ margin-top: -30px;
 .card {
   padding-top: 30px;
   padding-bottom: 30px;
-
 }
 .our-team, .our-team-title {
   text-align: center;
@@ -256,7 +269,7 @@ margin-top: -30px;
 .footer { 
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  background-color: var(--two-color);
   flex-direction: column;
 }
 /*Футер логотип*/
@@ -287,6 +300,7 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  text-decoration: none;
 }
 .map-link, .contacts-two {
   display: inline-block;
@@ -295,7 +309,7 @@ margin-top: -30px;
   color: var(--white-color);
 }
 .contacts-two,
-.tel-link {
+.tel-link-two {
   font-style: normal;
   color: var(--second-color);
   font-weight: 400;
@@ -303,13 +317,13 @@ margin-top: -30px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.tel-link .contacts-two {
+.tel-link-two .contacts-two {
   color: rgba(255 255 255 0.6);
 }
-.footer,
-.address,
-.contacts-two:hover,
-.tel-link:hover {
+  .footer,
+  .address,
+  .contacts-two:hover,
+  .tel-link-two:hover {
   color: var(--hover-color);
 }
 .address-link:not(:last-child) {
@@ -318,8 +332,8 @@ margin-top: -30px;
 /* Портфолио */
 .main {
   display: flex;
-justify-content: center;
-margin-bottom: 50px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .techno {
   align-items: center;
@@ -332,28 +346,28 @@ margin-bottom: 50px;
 .techno-item {
   margin-left: 30px;
   margin-top: 30px;
-  background-color: #FFFFFF;
+  background-color: var(--white-color);
   flex-basis: calc((100% - 120px) / 9);
 }
 .card-container {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--border);
   border-top: 0;
   box-sizing: border-box;
 }
 /* Уникальный Контент */
 /* Кнопка*/
-.portfolio-item:not(:last-child)  {
+.portfolio-item:not(:last-child) {
     margin-right: 8px;
 }
 .portfolio .btn-filter {
   min-width: 145px;
-  background-color: #F5F4FA;
+  background-color: var(--new-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  border: 1px solid #EEEEEE;
+  border: 1px solid var(--border);
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
